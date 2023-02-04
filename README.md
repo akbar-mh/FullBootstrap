@@ -1,1 +1,1 @@
-# FullBootstrap
+# full/bootstrap
