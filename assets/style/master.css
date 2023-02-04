@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Kalam:wght@700&family=Libre+Baskerville:ital@1&family=Montserrat:ital@1&family=Playfair+Display:ital,wght@0,900;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Kalam:wght@700&family=Libre+Baskerville:ital@1&family=Montserrat:ital@1&family=Playfair+Display:ital,wght@0,900;1,900&family=Roboto&display=swap");
+* {
+  font-family: "Courgette", cursive;
+  font-family: "Kalam", cursive;
+  font-family: "Libre Baskerville", serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+#menu-top {
+  height: 80px;
+  padding: 12px 0;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+#menu-top > div > div > h3 {
+  font-size: italic;
+  color: #35404E !important;
+  font-family: "Courgette", cursive;
+  font-weight: bold;
+  /* font-family: 'Kalam', cursive; */
+  font-family: "Libre Baskerville", serif;
+  /* font-family: 'Montserrat', sans-serif; */
+  /* font-family: 'Playfair Display', serif; */
+}
+#menu-top > div > ul:nth-of-type(1) > li {
+  position: relative;
+}
+#menu-top > div > ul:nth-of-type(1) > li::before, #menu-top > div > ul:nth-of-type(1) > li::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0px;
+  height: 3px;
+  background: linear-gradient(45deg, red 70%, blue);
+  transition: 0.5s;
+}
+#menu-top > div > ul:nth-of-type(1) > li::before {
+  left: 0;
+  top: 0;
+}
+#menu-top > div > ul:nth-of-type(1) > li::after {
+  right: 0;
+  bottom: 0;
+}
+#menu-top > div > ul:nth-of-type(1) > li:hover > a {
+  color: #D83535 !important;
+}
+#menu-top > div > ul:nth-of-type(1) > li:hover::before {
+  width: 100%;
+}
+#menu-top > div > ul:nth-of-type(1) > li:hover::after {
+  width: 100%;
+}
+
+#ul-icon li > a > i {
+  width: 40px;
+  height: 40px;
+  background-color: #D83535;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #ffffff;
+}
+#ul-icon li > a > i:hover {
+  background-color: #ffffff;
+  color: #D83535;
+}
+
+/*  img-bg  -------============= */
+.img-bg {
+  position: relative;
+  top: 80px;
+  height: 110vh !important;
+  background-image: url(../img/slid01.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.text-banner {
+  padding: 0 0 4rem 5rem !important;
+}
+.text-banner > .about-top > h1 {
+  /*   font-family: 'Montserrat', sans-serif;  */
+  font-family: "Playfair Display", serif;
+}
+.text-banner > .about-top h3 {
+  color: #35404E;
+  font-family: "Playfair Display", serif;
+}
+.text-banner > .about-top p {
+  color: #35404E;
+}
+
+.about {
+  height: auto;
+  /*  */
+}
+.about div {
+  /*   height: 100%; */
+}
+.about div section figure img {
+  /*   -radius: 26px !important; */
+}
+.about div section > div > p {
+  color: #35404E;
+}
+.about div section > div h1 {
+  color: #35404E;
+  font-weight: bolder;
+  font-family: "Playfair Display", serif;
+}
+.about div section > div > button > a {
+  color: #35404E;
+}
+
+/* servi start ++++++++++============== */
+#servi {
+  height: auto;
+  background-color: #eaebee !important;
+}
+#servi > div:nth-of-type(1) section h2 {
+  color: #35404E;
+  font-weight: bold;
+}
+
+.text section h2 {
+  font-weight: bold;
+  color: #35404E;
+}
+.text section p {
+  color: #35404E;
+}
+.text section h1 {
+  color: #35404E;
+  font-weight: bold;
+  font-family: "Courgette", cursive;
+}
+.text section h3 {
+  font-weight: bold;
+  /*  font-family: 'Courgette', cursive; */
+  font-family: "Playfair Display", serif;
+}
+
+.icon-ser i {
+  font-size: 40px;
+  color: #D83535;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  border: 1px solid red;
+}
+
+.freelan {
+  height: 40vh;
+}
+.freelan div h1 {
+  color: #35404E;
+  font-weight: bold !important;
+  font-family: "Playfair Display", serif;
+}
+.freelan div a {
+  font-family: "Courgette", cursive;
+  height: 50px;
+  width: 120px;
+}
+
+.slider-img section img {
+  width: 100px;
+  height: 100px;
+}
+
+#portfolio {
+  background-color: #eaebee;
+}
+#portfolio > div:nth-of-type(2) > figure {
+  position: relative;
+  height: 370px;
+  height: 250px;
+}
+#portfolio > div:nth-of-type(2) > figure::after, #portfolio > div:nth-of-type(2) > figure::before {
+  content: "";
+  display: flex;
+  width: 0%;
+  height: 0%;
+  position: absolute;
+  background-color: rgba(53, 64, 78, 0.4509803922);
+  transition: 0.4s;
+}
+#portfolio > div:nth-of-type(2) > figure::after {
+  bottom: 0;
+  right: 0;
+}
+#portfolio > div:nth-of-type(2) > figure::before {
+  top: 0;
+  left: 0;
+}
+#portfolio > div:nth-of-type(2) > figure:hover::before {
+  width: 100%;
+  height: 50%;
+  background-color: rgba(216, 53, 53, 0.5882352941);
+}
+#portfolio > div:nth-of-type(2) > figure:hover::after {
+  width: 100%;
+  height: 50%;
+}
+#portfolio > div:nth-of-type(2) > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cont {
+  height: auto;
+}
+
+#blog {
+  background-color: #eaebee;
+}
+
+.hours {
+  left: 50%;
+  bottom: 120px;
+  transform: translate(-50%, 0%);
+}
+.hours span {
+  font-size: 13px;
+}
+
+.contact {
+  background-color: #eaebee;
+}
+.contact h2 {
+  color: #35404E;
+  font-size: 47px;
+  font-weight: bold !important;
+  font-family: "Libre Baskerville", serif;
+  letter-spacing: 2px;
+}
+
+.section-btn > input {
+  background-color: none;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  height: 40px;
+}
+.section-btn > input:hover {
+  border: 1px solid #D83535;
+}
+
+.footer div section div i {
+  font-size: 60px;
+  color: #D83535;
+}
+.footer div section div span {
+  font-size: 25px;
+  font-weight: bold;
+  color: #D83535;
+}
+.footer div section div p {
+  color: #35404E;
+  font-size: 14px;
+}
+
+.copy {
+  background-color: #35404E;
+}
+
+/* class="col-md-12 col-lg-6" *//*# sourceMappingURL=master.css.map */
